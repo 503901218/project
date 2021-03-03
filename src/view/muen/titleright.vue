@@ -31,7 +31,7 @@
 
 <script>
 export default {
-  name: 'titleright',
+  name: 'TitleRight',
   props: {
     msg: String
   }

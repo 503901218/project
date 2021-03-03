@@ -10,14 +10,14 @@
   <div>
     <tran/>
     <router-view></router-view>
-    
+
     <router-link to="/page1">to pa1</router-link>
     <router-link to="/page2">to pa2</router-link>
-  </div> 
+  </div>
 </template>
 
 <script>
-import { ref } from 'vue'
+import {ref} from 'vue'
 // import HelloWorld from './components/HelloWorld.vue'
 import tran from './view/muen/transif'
 
@@ -49,9 +49,11 @@ export default {
   color: #2c3e50;
 
 }
+
 .logo {
   width: 50%;
 }
+
 .btn {
   margin-top: 100px;
 }

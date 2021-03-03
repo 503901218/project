@@ -1,13 +1,12 @@
-
 <template>
-    <el-container>
-        <el-header>
-            <titleHeader>21</titleHeader>
-            <!-- <div class="logo">
-               <img src="../../assets/img/logo.png" alt="">
-            </div> -->
-        </el-header>
-        <titleright></titleright>
+  <el-container>
+    <el-header>
+      <title-header>21</title-header>
+      <!--             <div class="logo">-->
+      <!--               <img src="../../assets/img/logo.png" alt="">-->
+      <!--            </div> -->
+    </el-header>
+    <title-right></title-right>
     <el-container>
       <el-aside width="200px">Aside</el-aside>
       <el-container>
@@ -21,67 +20,70 @@
 <script>
 import 'element-plus/lib/theme-chalk/display.css';
 
-import titleheader from './header.vue';
-import titleright from './titleright'
+import TitleHeader from './header.vue';
+import TitleRight from './titleright'
 
 // @import url("//unpkg.com/element-plus/lib/theme-chalk/index.css");
-  export default {
+export default {
 
-    data: () => ({
-      show2: true
-    }),
-    components(){
-        titleheader,
-        titleright
-    }
+  data: () => ({
+    show2: true
+  }),
+  components: {
+    TitleHeader,
+    TitleRight
   }
+}
 
 //   var allContainer=document.getElementById("allContainer") // eslint-disable-line no-unused-vars
- 
+
 //   allContainer.offsetHeight=window.innerHeight
 </script>
 
 
 <style>
-.el-container{
-    height: 800px;
+.el-container {
+  height: 800px;
 }
+
 .el-header, .el-footer {
-    background-color: #B3C0D1;
-    color: #333;
-    text-align: center;
-    line-height: 60px;
-    height: 80px;
+  background-color: #B3C0D1;
+  color: #333;
+  text-align: center;
+  line-height: 60px;
+  height: 80px;
 
-     display: flex;
-}
-.el-header{
-   height: 80px!important;
+  display: flex;
 }
 
-  .el-aside {
-    background-color: #D3DCE6;
-    color: #333;
-    text-align: center;
-/*     line-height: 200px; */
-  }
+.el-header {
+  height: 80px !important;
+}
 
-  .el-main {
-    background-color: #E9EEF3;
-    color: #333;
-    text-align: center;
-    line-height: 160px;
-  }
+.el-aside {
+  background-color: #D3DCE6;
+  color: #333;
+  text-align: center;
+  /*     line-height: 200px; */
+}
+
+.el-main {
+  background-color: #E9EEF3;
+  color: #333;
+  text-align: center;
+  line-height: 160px;
+}
 
 
 /* header */
-.logo{
+.logo {
   float: left;
   display: flex;
- 
+
 
 }
-.logo img{
+
+.logo img {
   padding: 8px 10px;
   align-items: center;
 }
