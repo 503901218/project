@@ -9,6 +9,10 @@
   </div> -->
   <div>
     <tran/>
+    <router-view></router-view>
+    
+    <router-link to="/page1">to pa1</router-link>
+    <router-link to="/page2">to pa2</router-link>
   </div> 
 </template>
 

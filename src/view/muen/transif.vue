@@ -2,10 +2,10 @@
 <template>
     <el-container>
         <el-header>
-            <!-- <titleHeader>21</titleHeader> -->
-            <div class="logo">
+            <titleHeader>21</titleHeader>
+            <!-- <div class="logo">
                <img src="../../assets/img/logo.png" alt="">
-            </div>
+            </div> -->
         </el-header>
         <titleright></titleright>
     <el-container>
