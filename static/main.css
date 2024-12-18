@@ -1,0 +1,59 @@
+:root {
+	--nav-body-height: 88rpx;
+	--tabbar-height: 98rpx;
+	--tabbar-body-height: 98rpx;
+	--tabbar-padding-bottom: 70rpx;
+	--theme-color: #5F50E6;
+	--default-shadow: 0px 0px 8px rgba(0, 0, 0, 0.08);
+	--font-normal: 'HarmonyOS';
+	--font-medium: 'HarmonyOS Medium';
+	--font-bold: 'HarmonyOS Bold';
+}
+
+/* html,body {
+	font-size: 18rpx!important;
+} */
+image{
+	width: 100%;
+	height: 100%;
+}
+view {
+	box-sizing: border-box;
+	font-family: var(--font-normal);
+}
+
+.row,
+.col {
+	display: flex;
+}
+
+.col {
+	flex-direction: column;
+}
+
+.ai-c {
+	align-items: center;
+}
+
+.jc-c {
+	justify-content: center;
+}
+
+.f-c {
+	align-items: center;
+	justify-content: center;
+}
+
+.jc-sb {
+	justify-content: space-between;
+}
+
+.page {
+	height: 100vh;
+	background: #E6EBED;
+}
+
+.auto-page {
+	min-height: 100vh;
+	background: #E6EBED;
+}
