@@ -1,18 +1,28 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import {Provider} from 'react-redux'
-import store from './store';
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { Provider } from "react-redux";
+
+import store from "./store";
+import { MyProviderContext } from "./components/context/context";
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+
+
 root.render(
+
   // <React.StrictMode>
   // Provider全局使用仓库数据
-    <Provider store={store}>
-       <App />
-    </Provider>
-   
+  <Provider store={store}>
+    
+       <MyProviderContext>
+          <App />
+       </MyProviderContext>
+    
+  </Provider>
+
   // </React.StrictMode>
 );
 

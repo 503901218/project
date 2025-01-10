@@ -40,21 +40,22 @@ const Main = () => {
           <CommonHeader collapsed={collapsed}></CommonHeader>
           <CommonTag></CommonTag>
 
-          <MyProviderContext>
+          {/* <MyProviderContext> */}
             <Content
               className="site-layout-background"
-              style={{
-                overflowY: "scroll",
+                style={{
+                 
+                overflow: "auto",
                 margin: "12px 16px",
                 padding: 24,
                 minHeight: 280,
-              }}
+              }} 
             >
-             
+            
               <Outlet /> {/* 子路由出口 */}
           
             </Content>
-          </MyProviderContext>
+          {/* </MyProviderContext> */}
         </Layout>
       </Layout>
     </RouterAuth>

@@ -184,7 +184,7 @@ overflow-y: hidden; */
     .col-one {
       display: flex;
       align-items: start;
-   
+
       .ant-card {
         min-height: 280px;
         width: 48%;
@@ -257,7 +257,8 @@ overflow-y: hidden; */
     .col-one {
       display: flex;
       align-items: center;
-      flex-direction: column;padding-right: 12px;
+      flex-direction: column;
+      padding-right: 12px;
       box-sizing: border-box;
       .ant-card {
         min-height: 280px;
@@ -327,7 +328,8 @@ overflow-y: hidden; */
     .col-one {
       display: flex;
       align-items: center;
-      flex-direction: column;padding-right: 12px;
+      flex-direction: column;
+      padding-right: 12px;
       box-sizing: border-box;
       .ant-card {
         margin-bottom: 2%;
@@ -345,10 +347,8 @@ overflow-y: hidden; */
             .name {
               font-size: 30px;
             }
-           
           }
         }
-        
       }
     }
     .col-two {
@@ -406,4 +406,33 @@ overflow-y: hidden; */
 .ant-modal {
   width: 60% !important;
   max-width: 500px;
+}
+
+.site-layout-background {
+  // overflow-y:scroll;
+  // margin: 12px 16px;
+  // padding: 24px;
+  // min-height: 280px;
+  // /* 滚动条整体样式 */
+  // ::-webkit-scrollbar {
+  //   width: 12px; /* 滚动条宽度 */
+  //   height: 12px; /* 垂直滚动条高度 */
+  // }
+
+  // /* 滚动条轨道 */
+  // ::-webkit-scrollbar-track {
+  //   background: #f1f1f1; /* 轨道颜色 */
+  //   border-radius: 10px; /* 圆角 */
+  // }
+
+  // /* 滚动条滑块 */
+  // ::-webkit-scrollbar-thumb {
+  //   background: #888; /* 滑块颜色 */
+  //   border-radius: 10px; /* 圆角 */
+  //   border: 3px solid #f1f1f1; /* 滑块边缘颜色，通常与轨道颜色相同 */
+  // }
+}
+.site-layout-background ::-webkit-scrollbar {
+  width: 5px; /* 滚动条宽度 */
+  height: 12px; /* 垂直滚动条高度 */
 }

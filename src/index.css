@@ -1,15 +1,14 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 #components-layout-demo-custom-trigger .trigger {
@@ -31,15 +30,30 @@ code {
 }
 
 .site-layout .site-layout-background {
-  background: #fff;
+  /* background: #fff; */
 }
-.main-container{
+.site-layout .site-layout-background::-webkit-scrollbar {
+  width: 8px; 
+  height: 8px; /* 垂直滚动条高度 */
+}
+/* 滚动条轨道 */
+.site-layout .site-layout-background::-webkit-scrollbar-track {
+  background: #fafafa; /* 轨道颜色 */
+  border-radius: 10px; /* 圆角 */
+
+}
+/* 滚动条滑块 */
+.site-layout .site-layout-background::-webkit-scrollbar-thumb {
+  background: #1677ff; /* 滑块颜色 */
+  border-radius: 10px; /* 圆角 */
+}
+.main-container {
   /* min-height: calc(100vh - 64px); */
-    height: 100vh;
-    overflow: hidden;
+  height: 100vh;
+  overflow: hidden;
 }
-.main-container .app-name{
-  background-color: #000;
+.main-container .app-name {
+  /* background-color: #000; */
   text-align: center;
   color: #fff;
   line-height: 64px;

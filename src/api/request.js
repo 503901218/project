@@ -51,7 +51,7 @@ request.requestData=(wey, url,params)=>{
   return new Promise((resolve,reject)=>{
       instance[wey](url,params).then(res=>{
         console.log('requestData',res)
-        resolve(res.data)
+        resolve(res)
 
           // resolve(res.data)
       }).catch(err=>{

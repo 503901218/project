@@ -55,7 +55,7 @@ const Mallson = () => {
       <p>-------Mallson组件分割线-------</p>
       <div
         className="mall-son flex f-c flex-col"
-        style={{ width: 300, backgroundColor: "#e0e9ff", height: 100 }}
+        style={{ width: 300, backgroundColor: "rgb(54 94 193)", height: 100 }}
       >
         隔代获取来自main组件的context:{data}
         <Button onClick={setData}>隔代修改context</Button>

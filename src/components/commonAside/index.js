@@ -4,12 +4,15 @@ import React, { useState, useEffect, useRef } from "react";
 import * as Icon from "@ant-design/icons";
 import { useDispatch, useSelector } from "react-redux"; //执行修改仓库数据方法
 import { selectMenuList } from "../../store/reducers/tap"; //修改仓库数据
+import { useCreateContext } from "../context/context"; //全局变量修改颜色
+
 const { Sider } = Layout;
 
 // 动态获取icon，返回react对象
 const iconToElement = (name) => React.createElement(Icon[name]);
 
 const CommonAside = ({ collapsed, onData }) => {
+  const { themeColor } = useCreateContext(); //拿到当前主题颜色是true?白:黑
   const navigate = useNavigate(); //拿到跳转函数实例
   const action = useLocation(); //获取当前路由信息
   const [list, setList] = useState([]); //获取的菜单列表
@@ -52,6 +55,12 @@ const CommonAside = ({ collapsed, onData }) => {
           label: "首页",
           icon: "HomeOutlined",
           url: "/home/index",
+        }, {
+          path: "/user",
+          name: "user",
+          label: "user页",
+          icon: "ShopOutlined",
+          url: "/user/index",
         },
         {
           path: "/mall",
@@ -60,13 +69,7 @@ const CommonAside = ({ collapsed, onData }) => {
           icon: "HomeOutlined",
           url: "/mall/index",
         },
-        {
-          path: "/user",
-          name: "user",
-          label: "user页",
-          icon: "ShopOutlined",
-          url: "/user/index",
-        },
+       
         {
           path: "/other",
           label: "其他",
@@ -191,7 +194,7 @@ const CommonAside = ({ collapsed, onData }) => {
         defaultSelectedKeys={["1"]}
         onClick={selceMenu}
         style={{ height: "100%" }}
-        theme="dark"
+        theme="dark" //{themeColor?'light':}
         mode="inline"
         items={items}
         selectedKeys={[action.pathname]} //切换tab，菜单响应改变选中高亮 当前选中的菜单项action.pathname=== key 数组
