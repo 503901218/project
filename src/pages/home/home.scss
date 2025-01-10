@@ -1,0 +1,104 @@
+// xs 屏幕 < 576px 响应式栅格，可为栅格数或一个包含其他属性的对象 number | object -
+// sm 屏幕 ≥ 576px 响应式栅格，可为栅格数或一个包含其他属性的对象 number | object -
+// md 屏幕 ≥ 768px 响应式栅格，可为栅格数或一个包含其他属性的对象 number | object -
+// lg 屏幕 ≥ 992px 响应式栅格，可为栅格数或一个包含其他属性的对象 number | object -
+// xl 屏幕 ≥ 1200px 响应式栅格，可为栅格数或一个包含其他属性的对象 number | object -
+// xxl 屏幕 ≥ 1600px 响应式栅格，可为栅格数或一个包含其他属性的对象
+
+.home {
+  overflow-x: hidden;
+
+  .ant-card {
+    margin-bottom: 12px;
+  }
+  .user {
+    background-color: azure;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+
+    img {
+      border-radius: 50%;
+      width: 50%;
+      height: 50%;
+      max-width: 120px;
+      max-height: 120px;
+      margin-right: 10%;
+    }
+    .userinfo {
+      .name {
+        width: 40%;
+        font-size: 32px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .login-info {
+    line-height: 28px;
+    font-size: 14px;
+    color: #999;
+    p {
+      span {
+        color: #666;
+        margin-left: 10%;
+      }
+    }
+  }
+  .nums {
+    // width: 100%;
+    justify-content: space-between;
+    .ant-card {
+      width: 33%;
+      .ant-card-body {
+        display: flex;
+        align-items: center;
+        padding: 10px 25px;
+        box-sizing: border-box;
+      }
+      .icon-box {
+        width: 80px;
+        height: 80px;
+
+        color: #fff;
+        border-radius: 20px;
+        text-align: center;
+        line-height: 85px;
+
+        .anticon {
+          font-size: 30px;
+        }
+      }
+      .detail {
+        margin-left: 15px;
+        text-align: center;
+        .num {
+          font-size: 30px;
+          margin-top: 0;
+          margin-bottom: 10px;
+        }
+        .name {
+          font-size: 14px;
+          color: #999;
+        }
+      }
+    }
+  }
+  .graph {
+    margin-top: 20px;
+  }
+  .grapg-one {
+    .echartsRefaa {
+      margin-top: 12px;
+      width: 100% !important;
+      height: 230px;
+    }
+  }
+
+  .graph-two {
+    .echartsRefaa {
+      margin-top: 12px;
+      width: 50% !important;
+      height: 230px;
+    }
+  }
+}

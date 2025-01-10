@@ -1,0 +1,409 @@
+.app {
+  text-align: center;
+  /* min-width: 550px;
+overflow-x: scroll;
+overflow-y: hidden; */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// xs
+@media (max-width: 576px) {
+  .home {
+    overflow-x: hidden;
+    .col-one {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      .ant-card {
+        min-height: 280px;
+        width: 90%;
+        margin-bottom: 12px;
+
+        .user {
+          .userinfo {
+            .name {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+    .col-two {
+      .nums {
+        background-color: aliceblue;
+        flex-direction: column;
+        align-items: center;
+        .ant-card {
+          width: 100%;
+          min-height: unset;
+          .ant-card-body {
+            width: 100%;
+            .icon-box {
+              width: 30%;
+              .anticon {
+                font-size: 20px;
+              }
+            }
+            .detail {
+              .num {
+                font-size: 18px;
+              }
+              .name {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+      .grapg-one {
+        .echartsRefaa {
+          margin-top: 12px;
+          width: 100% !important;
+          height: 230px;
+        }
+      }
+
+      .graph-two {
+        flex-direction: column;
+        .echartsRefaa {
+          margin-top: 12px;
+          width: 100% !important;
+          height: 230px;
+        }
+      }
+    }
+  }
+}
+// 、sm
+@media (min-width: 576px) and (max-width: 768px) {
+  .home {
+    overflow-x: hidden;
+    .col-one {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      .ant-card {
+        min-height: 280px;
+        width: 90%;
+        margin-bottom: 12px;
+
+        .user {
+          .userinfo {
+            .name {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+    .col-two {
+      .nums {
+        background-color: aliceblue;
+        // flex-direction: column;
+        align-items: center;
+        .ant-card {
+          width: 48%;
+          margin: 0 1%;
+          min-height: unset;
+          .ant-card-body {
+            width: 100%;
+            .icon-box {
+              width: 30%;
+              .anticon {
+                font-size: 20px;
+              }
+            }
+            .detail {
+              .num {
+                font-size: 18px;
+              }
+              .name {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+      .grapg-one {
+        .echartsRefaa {
+          margin-top: 12px;
+          width: 100% !important;
+          height: 230px;
+        }
+      }
+
+      .graph-two {
+        // flex-direction: column;
+        .echartsRefaa {
+          margin-top: 12px;
+          width: 50% !important;
+          height: 230px;
+        }
+      }
+    }
+  }
+}
+// md
+@media (min-width: 768px) and (max-width: 992px) {
+  .home {
+    overflow-x: hidden;
+    .col-one {
+      display: flex;
+      align-items: start;
+   
+      .ant-card {
+        min-height: 280px;
+        width: 48%;
+        margin: 0 1% 12px;
+
+        .user {
+          .userinfo {
+            .name {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .col-two {
+      .nums {
+        background-color: aliceblue;
+
+        align-items: center;
+        .ant-card {
+          width: 48%;
+          min-height: unset;
+          .ant-card-body {
+            width: 100%;
+            .icon-box {
+              width: 30%;
+              .anticon {
+                font-size: 26px;
+              }
+            }
+            .detail {
+              .num {
+                font-size: 24px;
+              }
+              .name {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+      .echartsRefaa {
+        margin-top: 12px;
+        width: 100% !important;
+        height: 230px;
+      }
+      .grapg-one {
+        .echartsRefaa {
+          margin-top: 12px;
+          width: 100% !important;
+          height: 240px;
+        }
+      }
+
+      .graph-two {
+        // flex-direction: column;
+        .echartsRefaa {
+          margin-top: 12px;
+          width: 50% !important;
+          height: 240px;
+        }
+      }
+    }
+  }
+}
+// lg
+@media (min-width: 992px) and (max-width: 1200px) {
+  .home {
+    overflow-x: hidden;
+    .col-one {
+      display: flex;
+      align-items: center;
+      flex-direction: column;padding-right: 12px;
+      box-sizing: border-box;
+      .ant-card {
+        min-height: 280px;
+        width: 100%;
+
+        .user {
+          .userinfo {
+            .name {
+              font-size: 26px;
+            }
+          }
+        }
+      }
+    }
+    .col-two {
+      .nums {
+        background-color: aliceblue;
+
+        align-items: center;
+        .ant-card {
+          width: 33%;
+          min-height: unset;
+          .ant-card-body {
+            width: 100%;
+            .icon-box {
+              width: 30%;
+              max-width: 80px;
+              .anticon {
+                font-size: 26px;
+              }
+            }
+            .detail {
+              .num {
+                font-size: 22px;
+              }
+              .name {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+      .grapg-one {
+        .echartsRefaa {
+          margin-top: 12px;
+          width: 100% !important;
+          height: 240px;
+        }
+      }
+
+      .graph-two {
+        // flex-direction: column;
+        .echartsRefaa {
+          margin-top: 12px;
+          width: 50% !important;
+          height: 240px;
+        }
+      }
+    }
+  }
+}
+
+// xl
+// xxl
+@media (min-width: 1200px) {
+  .home {
+    .col-one {
+      display: flex;
+      align-items: center;
+      flex-direction: column;padding-right: 12px;
+      box-sizing: border-box;
+      .ant-card {
+        margin-bottom: 2%;
+        // height: 45%;
+        width: 100%;
+        .ant-card-body {
+          height: 100%;
+        }
+        .user {
+          img {
+            max-width: 150px;
+            max-height: 150px;
+          }
+          .userinfo {
+            .name {
+              font-size: 30px;
+            }
+           
+          }
+        }
+        
+      }
+    }
+    .col-two {
+      .nums {
+        background-color: aliceblue;
+
+        align-items: center;
+        .ant-card {
+          width: 33%;
+          min-height: unset;
+          .ant-card-body {
+            width: 100%;
+            .icon-box {
+              width: 30%;
+              max-width: 80px;
+              .anticon {
+                font-size: 30px;
+              }
+            }
+            .detail {
+              .num {
+                font-size: 24px;
+              }
+              .name {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+      .grapg-one {
+        .echartsRefaa {
+          margin-top: 12px;
+          width: 100% !important;
+          height: 260px;
+        }
+      }
+
+      .graph-two {
+        // flex-direction: column;
+        .echartsRefaa {
+          margin-top: 12px;
+          width: 50% !important;
+          height: 260px;
+        }
+      }
+    }
+  }
+}
+// 表单窗口内边距
+.ant-layout-content {
+  padding: 12px !important;
+}
+// 弹窗
+.ant-modal {
+  width: 60% !important;
+  max-width: 500px;
+}

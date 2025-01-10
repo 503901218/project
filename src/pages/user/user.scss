@@ -1,0 +1,9 @@
+.user{
+    .flex-box{
+        margin-bottom: 12px;
+        flex-wrap: nowrap;
+        .ant-form{
+            flex-wrap: nowrap;
+        }
+    }
+}
