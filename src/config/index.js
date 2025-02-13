@@ -9,25 +9,9 @@ for (var i = 0; i < 100; i++) {
   data2.push((Math.cos(i / 5) * (i / 5 - 10) + i / 6) * 5);
 }
 let option = {
-  // title: {
-  //   text: 'Bar Animation Delay'
-  // },
   legend: {
     data: ["bar", "bar2"],
   },
-  // toolbox: {
-  //   // y: 'bottom',
-  //   feature: {
-  //     magicType: {
-  //       type: ['stack']
-  //     },
-  //     dataView: {},
-  //     saveAsImage: {
-  //       pixelRatio: 2
-  //     }
-  //   }
-  // },
-  // tooltip: {},
   xAxis: {
     data: xAxisData,
     splitLine: {
@@ -59,22 +43,9 @@ let option = {
       },
     },
   ],
-  // animationEasing: 'elasticOut',
-  // animationDelayUpdate: function (idx) {
-  //   return idx * 5;
-  // }
 };
 const chartData2 = option;
 let chartData = {
-  // title: {
-  //   text: 'Stacked Line'
-  // },
-  // tooltip: {
-  //   trigger: 'axis'
-  // },
-  // legend: {
-  //   data: ['Email', 'Union Ads', 'Video Ads', 'Direct', 'Search Engine']
-  // },
   grid: {
     left: "3%",
     right: "4%",

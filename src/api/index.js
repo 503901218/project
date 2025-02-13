@@ -9,6 +9,8 @@ let getLeftList = params =>requestData('get',`/qiling/home-page/`, params)
 
 
 api.getTest = params =>requestData('get',`http://127.0.0.1:8081/process_get/`+params)
+api.login = params =>requestData('post',`http://127.0.0.1:8082/api/login`,params)
+api.register = params =>requestData('post',`http://127.0.0.1:8082/api/reguser`,params)
 
 
 export {getLeftList}
