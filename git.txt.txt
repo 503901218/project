@@ -1,0 +1,33 @@
+本地库的建设
+1、初始化创建dev分支
+Git init -b dev
+2、查看状态Git status
+3、添加 Git add .
+4、提交git commit -m ‘注释’
+
+远程库
+1、在GitHub创建后
+2、实现关联，根据提示代码,执行一个远程操作add <远程仓库名称origin ><远程库地址>
+Git remote add origin https://github.com/......
+3、可以直接push,向远程仓库origin推送分支main, （-u是本地分支上传并合并到远程分支，记录名称为默认名称，下次推送直接git push）
+Git push -u origin main
+因为签名创建的分支是dev所以推送应该是Git push -u origin dev
+
+1、查看仓库版本
+Git remote -v \ Git show
+2、git push 《远端仓库名》 《本地分支名》
+
+
+
+冲突处理
+1、拉取Git pull
+2、修改冲突 Git add. Git commit ,git push
+
+分支
+查看本地分支git branch
+看本地和远程分支 git branch -a
+
+远程仓库名ubrong,分支也是dev
+
+创建分支：git branch main11
+推送并创建分支main11到仓库ubrong ：git push ubrong main11
