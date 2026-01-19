@@ -7,7 +7,7 @@
 <script>
 import 'element-plus/lib/theme-chalk/display.css';
 
-// @import url("//unpkg.com/element-plus/lib/theme-chalk/index.css");
+// @import url("//unpkg.com/element-plus/lib/theme-chalk/index.css"); 
   export default {
     name:'page1',
     data: () => ({
